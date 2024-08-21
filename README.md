@@ -56,3 +56,5 @@ Instruções para contribuir com o projeto.
 
 ## Licença
 Informações sobre a licença do projeto.
+
+Autor: Lucas Santana
