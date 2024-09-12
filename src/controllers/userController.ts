@@ -15,6 +15,10 @@ export const getUsers = async (req: Request, res: Response) => {
 // Função para adicionar um novo usuário
 export const addUser = async (req: Request, res: Response) => {
   const { name, email } = req.body;
+  console.log(req.body.name);
+  console.log(req.body.email);
+  console.log(req.body.params);
+  console.log(req.body.hearder);
   try {
     const queryText = 'INSERT INTO users(name, email) VALUES($1, $2) RETURNING *';
     const { rows } = await pool.query(queryText, [name, email]);
